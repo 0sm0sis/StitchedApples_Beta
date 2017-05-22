@@ -1,0 +1,265 @@
+﻿
+<html lang="en">
+
+<head>
+	
+    <meta charset="utf-8">
+
+    <title>Stitched Apples</title>
+
+    <link rel="stylesheet" href="demo_0.css">
+
+    <script>
+        function switchContentMain() {
+            var picklist = document.getElementById('contentMainSelect');
+            var selected = picklist.value;
+            if (selected == "plants") {
+                //alert("plants");
+                document.getElementById('mainContent').innerHTML = "I am displaying plant info";
+            }
+            else if (selected == "plantHealth") {
+                //alert("plantHealth");
+                document.getElementById('mainContent').innerHTML = "I am displaying plant health history";
+            }
+            else if (selected == "mediumHistory") {
+                //alert("mediumHistory");
+                document.getElementById('mainContent').innerHTML = "I am displaying grow medium history";
+            }
+            else if (selected == "video") {
+                //alert("video");
+                document.getElementById('mainContent').innerHTML = '<div class="container"><div class="col2"><div class="element">stuff</div></div><div class="col2"><div class="element">stuff</div></div></div>';
+            }
+        }
+    </script>
+
+</head>
+
+
+
+<body>
+
+    <div class="container">
+        <div id="title">Stiched Apples</div>
+
+        <div id="slogan">
+            Best Washington Baseball News!
+        </div>
+
+        <!-- Nav Bar -->
+        <div class="navContainer">
+            <div class="hline_thinOrange"></div>
+            <div class="dropdown">
+                <button class="dropbtn">My Alerts</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <div class="hline_thinestOrange"></div>
+                    <a href="./views/alerts.html">Health Alerts</a>
+                    <div class="hline_thinestOrange"></div>
+                    <a href="./views/alerts.html">Fertigation Alerts</a>
+                    <div class="hline_thinestOrange"></div>
+                    <a href="./views/alerts.html">Planned Deliveries</a>
+                    <div class="hline_thinestOrange"></div>
+                    <a href="./views/alerts.html">Upcoming Tasks</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button onmouseover="myFunction()" class="dropbtn">Grow Areas</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <div class="hline_thinestOrange"></div>
+                    <a href="./views.alerts.html">Farm 1</a>
+                    <div class="hline_thinestOrange"></div>
+                    <a href="./views.alerts.html">Farm 2</a>
+                    <div class="hline_thinestOrange"></div>
+                    <a href="./views.alerts.html">Farm 3</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button onmouseover="myFunction()" class="dropbtn">Crops</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <div class="hline_thinestOrange"></div>
+                    <a href="./views.alerts.html">Basil</a>
+                    <div class="hline_thinestOrange"></div>
+                    <a href="./views.alerts.html">Tomatoes</a>
+                    <div class="hline_thinestOrange"></div>
+                    <a href="./views.alerts.html">Bell Peppers</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Reports</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <div class="hline_thinestOrange"></div>
+                    <a href="./views.alerts.html">Crops</a>
+                    <div class="hline_thinestOrange"></div>
+                    <a href="./views.alerts.html">Inventory</a>
+                    <div class="hline_thinestOrange"></div>
+                    <a href="./views.alerts.html">Deliveries</a>
+                </div>
+            </div>
+            <div class="hline_thinOrange"></div>
+        </div>
+    </div>
+
+    <div class="container">
+
+    </div>
+
+    <div class="container">
+
+        <div class="col4" style="background-color:lightblue">
+
+            <div class="element">
+
+                <b><u>Test Basic JS Here</u></b>
+
+                <br />
+                Changes being bastartd
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum<br />
+
+                (text)
+
+
+            </div>
+
+        </div>
+
+        <div class="col75">
+
+            <div class="element">
+
+                <u>Video of the week</u><br />
+
+                <div id="mainContent"></div>
+
+                <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/qlvPq8ErGUM?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="col2" style="background-color:black">
+
+            <div class="col2">
+
+                <div class="element">
+
+                    <br>text
+
+
+                </div>
+
+            </div>
+
+            <div class="col2">
+
+                <div class="element">
+
+                    stuff2<br />
+
+                    more stuff
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col2">
+
+            <div class="element">
+
+                stuff3
+
+                <br>text
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="col4">
+
+            <div class="element">
+                text
+            </div>
+
+        </div>
+
+        <div class="col4">
+
+            <div class="element">text	</div>
+
+        </div>
+
+        <div class="col4">
+
+            <div class="element">
+                text
+            </div>
+
+        </div>
+
+        <div class="col4">
+
+            <div class="element">
+                more text
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="col4">
+
+        </div>
+
+        <div class="col2">
+
+            <div class="innerRow">
+
+                <div class="col4">
+
+                </div>
+
+                <div class="col4">
+
+
+                </div>
+
+                <div class="col4">
+
+
+                </div>
+
+                <div class="col4">
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col4">
+
+
+        </div>
+
+    </div>
+
+    <div id="footer">Copyright 2017 Stitches Apples (fix the name later)</div>
+</body>
+
+
+
+</html>
