@@ -2,6 +2,7 @@
 * {
     font-family: Verdana;
 }
+
 .container {
         width: 100%;
    background-color: #062354;
@@ -60,8 +61,10 @@
 #title {
     color: white;
     font-family: "Futura";
-    text-align: center;
-    font-size: 100px;
+    text-align: left;
+    font-size: 64px;
+    margin: 0 auto 10px 10px;
+    display:inline-block;
 }
 
 ul {
@@ -80,11 +83,15 @@ li {
 }
 
 #slogan {
-    font-family: "Futura";
     color: white;
-    background-color: lightseagreen;
-    text-align: center;
-    font-size: 30px;
+    font-family: "Futura";
+    text-align: left;
+    font-size: 32px;
+    margin: 0 auto 10px 10px;
+    display:block;
+    float:left;
+    clear:both;
+
 }
 
 
