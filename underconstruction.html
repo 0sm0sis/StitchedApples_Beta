@@ -1,207 +1,172 @@
-
+﻿
 <html lang="en">
-	
 
-	<head>
-	
+<head>
 
-	<meta charset="utf-8">
-	
+    <meta charset="utf-8">
 
-    <title>Stiched Apples: Page under</title>  
-	
+    <title>Stiched Apples: Page under</title>
 
-	<link rel="stylesheet" href="demo_0.css">
-	
+    <link rel="stylesheet" href="demo_0.css">
 
-	<script>
-	
+    <script>
+        function switchContentMain() {
+            var picklist = document.getElementById('contentMainSelect');
+            var selected = picklist.value;
+            if (selected == "plants") {
+                //alert("plants");
+                document.getElementById('mainContent').innerHTML = "I am displaying plant info";
+            }
+            else if (selected == "plantHealth") {
+                //alert("plantHealth");
+                document.getElementById('mainContent').innerHTML = "I am displaying plant health history";
+            }
+            else if (selected == "mediumHistory") {
+                //alert("mediumHistory");
+                document.getElementById('mainContent').innerHTML = "I am displaying grow medium history";
+            }
+            else if (selected == "video") {
+                //alert("video");
+                document.getElementById('mainContent').innerHTML = '<div class="container"><div class="col2"><div class="element">stuff</div></div><div class="col2"><div class="element">stuff</div></div></div>';
+            }
+        }
+    </script>
 
-	function switchContentMain() {
-	
+</head>
 
-	var picklist = document.getElementById('contentMainSelect');
-	
 
-	var selected = picklist.value;
-	
 
-	if (selected == "plants") {
-	
+<body>
 
-	//alert("plants");
-	
+    <div class="container">
+        <a href="index.html">
+            <div id="title">Stiched Apples</div>
+        </a>
 
-	document.getElementById('mainContent').innerHTML = "I am displaying plant info";
-	
+        <div id="slogan">
+            Best Washington Baseball News!
+        </div>
 
-	}
-	
+        <!-- Nav Bar -->
+        <div class="navContainer">
+            <div class="hline_thinwhite"></div>
+            <div class="dropdown">
+                <button class="dropbtn">Mariners</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <div class="hline_thinestOrange"></div>
+                    <a href="underconstruction.html">Schedule</a>
+                    <div class="hline_thinestOrange"></div>
+                    <a href="underconstruction.html">News</a>
+                    <div class="hline_thinestOrange"></div>
+                    <a href="underconstruction.html">Team</a>
+                    <div class="hline_thinestOrange"></div>
+                    <a href="underconstruction.html">Statistics</a>
+                </div>
+            </div>
 
-	else if (selected == "plantHealth") {
-	
+            <div class="dropdown">
+                <button onmouseover="myFunction()" class="dropbtn">Minor League</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <div class="hline_thinestOrange"></div>
+                    <a href="underconstruction.html">Rainiers</a>
+                    <div class="hline_thinestOrange"></div>
+                    <a href="underconstruction.html">AquaSox</a>
+                    <div class="hline_thinestOrange"></div>
+                    <a href="underconstruction.html">Other</a>
 
-	//alert("plantHealth");
-	
+                </div>
+            </div>
 
-	document.getElementById('mainContent').innerHTML = "I am displaying plant health history";
-	
+            <div class="dropdown">
+                <button onmouseover="myFunction()" class="dropbtn">College</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <div class="hline_thinestOrange"></div>
+                    <a href="underconstruction.html">Division 1</a>
+                    <div class="hline_thinestOrange"></div>
+                    <a href="underconstruction.html">Division 2</a>
+                    <div class="hline_thinestOrange"></div>
+                    <a href="underconstruction.html">Division 3</a>
+                </div>
+            </div>
 
-	}
-	
+            <div class="dropdown">
+                <button class="dropbtn">High School</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <div class="hline_thinestOrange"></div>
+                    <a href="underconstruction.html">Schools</a>
+                    <div class="hline_thinestOrange"></div>
+                    <a href="underconstruction.html">Schedules</a>
+                    <div class="hline_thinestOrange"></div>
+                    <a href="underconstruction.html">News</a>
+                </div>
+            </div>
 
-	else if (selected == "mediumHistory") {
-	
+            <div class="dropdown">
+                <button class="dropbtn">Little League</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <div class="hline_thinestOrange"></div>
+                    <a href="underconstruction.html">Teams</a>
+                    <div class="hline_thinestOrange"></div>
+                    <a href="underconstruction.html">Important Dates</a>
+                    <div class="hline_thinestOrange"></div>
+                    <a href="underconstruction.html">Baseball Information</a>
+                </div>
+            </div>
 
-	//alert("mediumHistory");
-	
+            <div class="hline_thinwhite"></div>
+        </div>
+    </div>
 
-	document.getElementById('mainContent').innerHTML = "I am displaying grow medium history";
-	
+    </div>
 
-	}
-	
 
-	else if (selected == "video") {
-	
+   
 
-	//alert("video");
-	
+    <div class="container">
 
-	document.getElementById('mainContent').innerHTML = '<div class="container"><div class="col2"><div class="element">stuff</div></div><div class="col2"><div class="element">stuff</div></div></div>';
-	
+        <div class="col4" style="background-color:lightblue">
 
-	}
-	
+            <div class="element">
 
-	}
-	
+                <b><u>Test Basic JS Here</u></b>
 
-	</script>
-	
+                <select id="contentMainSelect" name="selectname" onchange="switchContentMain()">
 
-	</head>
-	
+                    <option value="plants">Plants</option>
 
-	
+                    <option value="plantHealth">Plant Health Notices</option>
 
-	
+                    <option value="mediumHistory">Grow Medium History</option>
 
-	<body>
-        
-	<div class="container">
+                    <option value="video">Camera Feeds</option>
 
-    <div id="title">Stiched Apples</div>
-        
-	<div id="slogan">
-	   Best Washington Baseball News!
-	</div>
-	
+                </select><br />
 
-	<div class="hline_thinOrange"></div>
-	
+                Camera Feeds is most interesting<br />
 
-	<div class="hline_thickGreen"></div>
-	
+                (text)
 
-	<div class="hline_thinOrange"></div>
-	
 
-	</div>
-	
+            </div>
 
-	<div class="container">
-	
+        </div>
 
-	<div class="element">
-	
-	<div class="navbar">
-	    <ul>
-            <li><a href="index (1).html">Home</a></li>
-            <li><a href="underconstruction.html">Mariners</a></li>
-            <li><a href="underconstruction.html">Minor League</a></li>
-            <li><a href="underconstruction.html">College</a></li>
-            <li><a href="underconstruction.html">High School</a></li>
-            <li><a href="underconstruction.html">Little League</a></li>
-	    </ul>
-	</div>
-	
-	
+        <div class="col75">
 
-	</div>
-	
+            <div class="element">
 
-	</div>
-	
+                <div id="mainContent"></div>
+                PAGE CURRENTLY UNDER CONSTRUCTION
+            </div>
 
-	<div class="container">
-	
+        </div>
 
-	<div class="col4" style="background-color:lightblue">
-	
-
-	<div class="element">
-	
-
-	<b><u>Test Basic JS Here</u></b>
-	
-
-	<select id="contentMainSelect" name="selectname" onchange="switchContentMain()">
-	
-
-	<option value="plants">Plants</option>
-	
-
-	<option value="plantHealth">Plant Health Notices</option>
-	
-
-	<option value="mediumHistory">Grow Medium History</option>
-	
-
-	<option value="video">Camera Feeds</option>
-	
-
-	</select><br />
-	
-
-	Camera Feeds is most interesting<br />
-	
-
-    (text)
-	
-
-	</div>
-	
-
-	</div>
-	
-
-	<div class="col75">
-	
-
-	<div class="element">
-	
-
-	<div id="mainContent"></div>	
-    PAGE CURRENTLY UNDER CONSTRUCTION
-	</div>
-	
-
-	</div>
-	
-
-	</div>
-	
-
+    </div>
 
 
     <div id="footer">Copyright 2017 Stitches Apples (fix the name later)</div>
+</body>
 
-    </body>
-	
 
-	
 
-	
-
-	</html>
+</html>
