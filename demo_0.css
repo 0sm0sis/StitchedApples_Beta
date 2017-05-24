@@ -6,7 +6,7 @@
 .container {
         width: 100%;
    background-color: #062354;
-   margin: 0 auto;
+   margin: 0 ;
    padding: 5px;
         /*display: inline-block;
    text-align:center;*/
@@ -215,4 +215,83 @@ li {
     min-width: 100%;
     height:10px;
     background-color:navy;
+}
+
+
+/*Begin lefthand nav homepage styles*/
+
+/*Alert elements*/
+.alertContainer {
+	width: 100%;
+    background-color: white;
+    margin: 0;
+    /*padding: 5px;*/
+	/*display: inline-block;
+    text-align:center;*/
+    display:table-cell;
+    vertical-align:text-top;
+    float:left;
+    clear:both;
+    text-decoration:none;
+}
+.elementAlert{
+    color:#001200;
+    background-color:white;
+    height: auto;
+    display:block;
+    vertical-align:text-top;
+    margin: 5px 0px 5px 0px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    font-family:'Segoe UI';
+    text-decoration:none;
+}
+.elementAlert a{
+    text-decoration:none;
+    color:#001200; 
+}
+
+.alertH1{
+    color: darkblue;
+    vertical-align:top;
+    display:inline-block;
+    font-weight: bold;
+    margin-left: 5px;
+    text-decoration:none;
+}
+
+.alertMediaFrame {
+    width: 64px;
+    height: 36px;
+    display: inline-block;
+    background-color: #016F01; 
+    margin:5px;
+    text-decoration:none;
+    /*background-image: url('../~christ48/webdes/images/cameraClip.png');*/
+}
+.alertCol75 {
+	width: 100%;
+    margin: 0 auto;
+    background-color:white;
+    display:table-cell;
+    vertical-align:top;
+    text-decoration:none;
+
+}
+
+.alertCol4 {
+	min-width: 25%;
+    margin: 0 auto;
+    background-color:white;
+    display:table-cell;
+    vertical-align:top;
+    text-decoration:none;
+}
+.alertCol1 {
+	min-width: 100%;
+    margin: 0 auto;
+    background-color:white;
+    display:table-cell;
+    vertical-align:top;
 }
