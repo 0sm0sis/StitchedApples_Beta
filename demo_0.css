@@ -295,3 +295,13 @@ li {
     display:table-cell;
     vertical-align:top;
 }
+
+#construction {
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+    width: 1000px;
+    height: 600px;
+    top: 100px;
+    text-decoration: none;
+}
