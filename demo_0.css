@@ -1,9 +1,8 @@
 /*Timestamp Update*/
-html, body {
+
+* {
     margin: 0;
     padding: 0;
-}
-* {
     font-family: Verdana;
 }
 
@@ -11,7 +10,7 @@ html, body {
         width: 100%;
    background-color: #062354;
    margin: 0 ;
-   padding: 5px;
+   padding: 0;
         /*display: inline-block;
    text-align:center;*/
    display:table-cell;

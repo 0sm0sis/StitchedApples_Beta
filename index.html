@@ -1,43 +1,11 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
-
     <title>Stitched Apples</title>
-
     <link rel="stylesheet" href="demo_0.css">
-
-    <script>
-        function switchContentMain() {
-            var picklist = document.getElementById('contentMainSelect');
-            var selected = picklist.value;
-            if (selected == "plants") {
-                //alert("plants");
-                document.getElementById('mainContent').innerHTML = "I am displaying plant info";
-            }
-            else if (selected == "plantHealth") {
-                //alert("plantHealth");
-                document.getElementById('mainContent').innerHTML = "I am displaying plant health history";
-            }
-            else if (selected == "mediumHistory") {
-                //alert("mediumHistory");
-                document.getElementById('mainContent').innerHTML = "I am displaying grow medium history";
-            }
-            else if (selected == "video") {
-                //alert("video");
-                document.getElementById('mainContent').innerHTML = '<div class="container"><div class="col2"><div class="element">stuff</div></div><div class="col2"><div class="element">stuff</div></div></div>';
-            }
-        }
-    </script>
-
 </head>
-
-
-
 <body>
-
     <div class="container">
         <a href="index.html">
             <div id="title">Stiched Apples</div>
@@ -47,229 +15,201 @@
                 Best Washington Baseball News!
             </div>
         </div>
-
-        <!-- Nav Bar -->
-        <div class="navContainer">
-            <div class="hline_thinwhite"></div>
-            <div class="dropdown">
-                <button class="dropbtn">Mariners</button>
-                <div id="dropdownMariners" class="dropdown-content">
-                    <div class="hline_thinestOrange"></div>
-                    <a href="underconstruction.html">Schedule</a>
-                    <div class="hline_thinestOrange"></div>
-                    <a href="underconstruction.html">News</a>
-                    <div class="hline_thinestOrange"></div>
-                    <a href="underconstruction.html">Team</a>
-                    <div class="hline_thinestOrange"></div>
-                    <a href="underconstruction.html">Statistics</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button onmouseover="myFunction()" class="dropbtn">Minor League</button>
-                <div id="dropdownMinors" class="dropdown-content">
-                    <div class="hline_thinestOrange"></div>
-                    <a href="underconstruction.html">Rainiers</a>
-                    <div class="hline_thinestOrange"></div>
-                    <a href="underconstruction.html">AquaSox</a>
-                    <div class="hline_thinestOrange"></div>
-                    <a href="underconstruction.html">Other</a>
-
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button onmouseover="myFunction()" class="dropbtn">College</button>
-                <div id="dropdownCollege" class="dropdown-content">
-                    <div class="hline_thinestOrange"></div>
-                    <a href="underconstruction.html">Division 1</a>
-                    <div class="hline_thinestOrange"></div>
-                    <a href="underconstruction.html">Division 2</a>
-                    <div class="hline_thinestOrange"></div>
-                    <a href="underconstruction.html">Division 3</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">High School</button>
-                <div id="dropdownHighschool" class="dropdown-content">
-                    <div class="hline_thinestOrange"></div>
-                    <a href="underconstruction.html">Schools</a>
-                    <div class="hline_thinestOrange"></div>
-                    <a href="underconstruction.html">Schedules</a>
-                    <div class="hline_thinestOrange"></div>
-                    <a href="underconstruction.html">News</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">Little League</button>
-                <div id="dropdownLittleLeague" class="dropdown-content">
-                    <div class="hline_thinestOrange"></div>
-                    <a href="underconstruction.html">Teams</a>
-                    <div class="hline_thinestOrange"></div>
-                    <a href="underconstruction.html">Important Dates</a>
-                    <div class="hline_thinestOrange"></div>
-                    <a href="underconstruction.html">Baseball Information</a>
-                </div>
-            </div>
-
-            <div class="hline_thinwhite"></div>
-        </div>
     </div>
-
-
+    <!-- Nav Bar -->
+    <div class="navContainer">
+        <div class="hline_thinwhite"></div>
+        <div class="dropdown">
+            <button class="dropbtn">Mariners</button>
+            <div id="dropdownMariners" class="dropdown-content">
+                <div class="hline_thinestOrange"></div>
+                <a href="underconstruction.html">Schedule</a>
+                <div class="hline_thinestOrange"></div>
+                <a href="underconstruction.html">News</a>
+                <div class="hline_thinestOrange"></div>
+                <a href="underconstruction.html">Team</a>
+                <div class="hline_thinestOrange"></div>
+                <a href="underconstruction.html">Statistics</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button onmouseover="myFunction()" class="dropbtn">Minor League</button>
+            <div id="dropdownMinors" class="dropdown-content">
+                <div class="hline_thinestOrange"></div>
+                <a href="underconstruction.html">Rainiers</a>
+                <div class="hline_thinestOrange"></div>
+                <a href="underconstruction.html">AquaSox</a>
+                <div class="hline_thinestOrange"></div>
+                <a href="underconstruction.html">Other</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button onmouseover="myFunction()" class="dropbtn">College</button>
+            <div id="dropdownCollege" class="dropdown-content">
+                <div class="hline_thinestOrange"></div>
+                <a href="underconstruction.html">Division 1</a>
+                <div class="hline_thinestOrange"></div>
+                <a href="underconstruction.html">Division 2</a>
+                <div class="hline_thinestOrange"></div>
+                <a href="underconstruction.html">Division 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">High School</button>
+            <div id="dropdownHighschool" class="dropdown-content">
+                <div class="hline_thinestOrange"></div>
+                <a href="underconstruction.html">Schools</a>
+                <div class="hline_thinestOrange"></div>
+                <a href="underconstruction.html">Schedules</a>
+                <div class="hline_thinestOrange"></div>
+                <a href="underconstruction.html">News</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Little League</button>
+            <div id="dropdownLittleLeague" class="dropdown-content">
+                <div class="hline_thinestOrange"></div>
+                <a href="underconstruction.html">Teams</a>
+                <div class="hline_thinestOrange"></div>
+                <a href="underconstruction.html">Important Dates</a>
+                <div class="hline_thinestOrange"></div>
+                <a href="underconstruction.html">Baseball Information</a>
+            </div>
+        </div>
+        <div class="hline_thinwhite"></div>
+    </div>
+    <!-- Main Body Content Start -->
+    <!-- Left Main -->
+    <!-- Left alert Bar -->
     <div class="container">
-        <div class="col4" style="background-color:lightseagreen">
-            <div class="element">
+        <div class="col4">
+            <div class="element" style="height:400px;overflow-y:auto;border:none;">
+                <!--<b><u>Test Basic JS Here</u></b>-->
+                <b><u>Alerts & Activities</u></b>
+                <!--<select id="contentMainSelect" name="selectname" onchange="switchContentMain()">
+                   <option value="plants">Plants</option>
+                   <option value="plantHealth">Plant Health Notices</option>
+                   <option value="mediumHistory">Grow Medium History</option>
+                   <option value="video">Camera Feeds</option>
+                   </select><br />-->
                 <div class="elementAlert">
-                    <a href="./underconstruction.html">
+                    <a href="./views/alert.html">
                         <div class="alertContainer">
-                            <div class="alertH1">Baseball Headline</div>
+                            <div class="alertH1">Health Alert: Plant ID #</div>
                         </div>
                         <div>
                             <div class="alertCol4">
                                 <div class="alertMediaFrame">
-
+                                    <img src="./images/cameraClip.png" height="36" width="64" />
                                 </div>
                             </div>
                             <div class="alertCol75">
-                                Something exciting happened...
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="elementAlert">
-                    <a href="./underconstruction.html">
-                        <div class="alertContainer">
-                            <div class="alertH1">Baseball Headline</div>
-                        </div>
-                        <div>
-                            <div class="alertCol4">
-                                <div class="alertMediaFrame">
-                                    <!--<img src="./images/cameraClip.png" height="36" width="64" />-->
-                                </div>
-                            </div>
-                            <div class="alertCol75">
-                                Something exciting happened...
+                                There has been a critical condition detected for this plant
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="elementAlert">
-                    <a href="./underconstruction.html">
+                    <a href="./views/alert.html">
                         <div class="alertContainer">
-                            <div class="alertH1">Baseball Headline</div>
+                            <div class="alertH1">Health Alert: Plant ID #</div>
                         </div>
                         <div>
                             <div class="alertCol4">
                                 <div class="alertMediaFrame">
-                                    <!--<img src="./images/cameraClip.png" height="36" width="64" />-->
+                                    <img src="./images/cameraClip.png" height="36" width="64" />
                                 </div>
                             </div>
                             <div class="alertCol75">
-                                Something exciting happened...
+                                There has been a critical condition detected for this plant
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="elementAlert">
-                    <a href="./underconstruction.html">
+                    <a href="./views/alert.html">
                         <div class="alertContainer">
-                            <div class="alertH1">Baseball Headline</div>
+                            <div class="alertH1">Health Alert: Plant ID #</div>
                         </div>
                         <div>
                             <div class="alertCol4">
                                 <div class="alertMediaFrame">
-                                    <!-- <img src="./images/cameraClip.png" height="36" width="64" />-->
+                                    <img src="./images/cameraClip.png" height="36" width="64" />
                                 </div>
                             </div>
                             <div class="alertCol75">
-                                Something exciting happened...
+                                There has been a critical condition detected for this plant
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="elementAlert">
+                    <a href="./views/alert.html">
+                        <div class="alertContainer">
+                            <div class="alertH1">Health Alert: Plant ID #</div>
+                        </div>
+                        <div>
+                            <div class="alertCol4">
+                                <div class="alertMediaFrame">
+                                    <img src="./images/cameraClip.png" height="36" width="64" />
+                                </div>
+                            </div>
+                            <div class="alertCol75">
+                                There has been a critical condition detected for this plant
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
         </div>
+        <!-- Main Body -->
         <div class="col75">
-            <div class="element" style="height:400px">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+            <div class="element">
+                <u><b>My Home Page</b></u><br />
+                <div id="mainContent"></div>
+                This page contains information specific to the tasks associated with their given user role. Possibly a calender or list of upcoming tasks and alerts.
+                <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id consectetur ligula. Proin laoreet tristique ultrices. Fusce molestie, sapien non porttitor accumsan, elit leo varius lorem, at interdum velit urna at urna. Donec mauris ante, euismod vitae elit eget.
+                <br /><iframe width="560" height="315" src="https://www.youtube.com/embed/njPLGFOyMO0" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     </div>
-
+    <!-- Footer Start -->
     <div class="container">
-
         <div class="col2" style="background-color:black">
-
             <div class="col2">
-
                 <div class="element">
-
                     <br>text
-
-
                 </div>
-
             </div>
-
             <div class="col2">
-
                 <div class="element">
-
                     stuff2<br />
-
                     more stuff
-
-
                 </div>
-
             </div>
-
         </div>
-
         <div class="col2">
-
             <div class="element">
-
                 stuff3
-
                 <br>text
-
-
             </div>
         </div>
-
     </div>
-
     <div class="container">
-
         <div class="col4">
-
             <div class="element">
                 text
             </div>
-
         </div>
-
         <div class="col4">
-
             <div class="element">text	</div>
-
         </div>
-
         <div class="col4">
-
             <div class="element">
                 text
             </div>
-
         </div>
-
         <div class="col4">
-
             <div class="element">
                 more text
             </div>
@@ -287,10 +227,7 @@
                 <div class="col4">
                 </div>
                 <div class="col4">
-
-
                 </div>
-
             </div>
         </div>
         <div class="col4">
@@ -299,16 +236,15 @@
     <div id="footer">
         <ul>
             <a href="missionstatement.html">
-            <l1> About Us </l1>
+                <l1> About Us </l1>
             </a>
             <a href="contact.html">
-            <li> Contact Us </li>
+                <li> Contact Us </li>
             </a>
             <a href="underconstruction.html">
-            <l1> Careers </l1>
+                <l1> Careers </l1>
             </a>
-
-   </div>
+        </ul>
+    </div>
 </body>
-
 </html>
