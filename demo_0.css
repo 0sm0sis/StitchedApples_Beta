@@ -122,6 +122,7 @@ li {
 #footer {
     /*text-align: center;*/
     font-size: 20px;
+    display:inline-block;
 }
 
 /*Nav Bar Stuff*/
@@ -233,7 +234,7 @@ li {
 /*Alert elements*/
 .alertContainer {
 	width: 100%;
-    background-color: white;
+    background-color: none;
     margin: 0;
     /*padding: 5px;*/
 	/*display: inline-block;
@@ -244,18 +245,22 @@ li {
     clear:both;
     text-decoration:none;
 }
-.elementAlert{
-    color:#001200;
-    background-color:white;
+.elementAlert {
+    color: #001200;
     height: auto;
-    display:block;
-    vertical-align:text-top;
+    display: block;
+    vertical-align: text-top;
     margin: 5px 0px 5px 0px;
     border: 1px solid;
     border-radius: 5px;
     padding: 5px;
-    font-family:'Segoe UI';
-    text-decoration:none;
+    font-family: 'Segoe UI';
+    text-decoration: none;
+    background:
+    /* top, transparent red, faked with gradient */
+    linear-gradient( rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45) ),
+    /* bottom, image */
+    url('images/divingOutfielder0.jpg');
 }
 .elementAlert a{
     text-decoration:none;
@@ -275,7 +280,7 @@ li {
     width: 64px;
     height: 36px;
     display: inline-block;
-    background-color: #016F01; 
+    background-color: none; 
     margin:5px;
     text-decoration:none;
     /*background-image: url('../~christ48/webdes/images/cameraClip.png');*/
@@ -283,17 +288,16 @@ li {
 .alertCol75 {
 	width: 100%;
     margin: 0 auto;
-    background-color:white;
+    background-color:none;
     display:table-cell;
     vertical-align:top;
     text-decoration:none;
-
 }
 
 .alertCol4 {
 	min-width: 25%;
     margin: 0 auto;
-    background-color:white;
+    background-color:none;
     display:table-cell;
     vertical-align:top;
     text-decoration:none;
@@ -301,7 +305,7 @@ li {
 .alertCol1 {
 	min-width: 100%;
     margin: 0 auto;
-    background-color:white;
+    background-color:none;
     display:table-cell;
     vertical-align:top;
 }
@@ -315,3 +319,13 @@ li {
     top: 100px;
     text-decoration: none;
 }
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    height: 400px;
+    background-color: red;
+}
+
