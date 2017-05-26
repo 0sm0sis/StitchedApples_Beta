@@ -343,3 +343,17 @@ li {
     font-family:inherit;
     margin-top:10px;
 }
+
+.foot{
+    height: 40px;
+    display:block;
+    color:white;
+    font-family:inherit;
+    margin: 10px;
+    text-align: right;
+}
+.foot a {
+    color: white;
+    text-decoration:none;
+    font-size:small;
+}
